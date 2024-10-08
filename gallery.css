@@ -1,0 +1,67 @@
+header {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-indent: 6px;
+}
+nav {
+    display: flex; 
+    padding: 15px;
+}
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: #3C3D37;
+}    
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-image: url(https://scontent.xx.fbcdn.net/v/t1.15752-9/461798983_2867794443387649_7670081828415552546_n.jpg?stp=dst-jpg_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHgbQ2L_Q3JDFGNmllQueJJYY82yNseq8ZhjzbI2x6rxhhfnwTD2yTH3Bmccy3NT_pY_Du6AbZpF7hUhtoA3tah&_nc_ohc=2PvrlrH2NI4Q7kNvgEScAOe&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&_nc_gid=AN2BHWQu4D1VRWBH4D6KaBy&oh=03_Q7cD1QEj-712MQl4qp_wfOpp_7SmW18mjoYZB-jDMY9OFSfpoA&oe=6728E988);
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+}    
+.gallery {
+    padding: 40px;
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    background-color: rgba(255, 255, 01.);
+    padding: 50px;
+    border-radius: 50px;
+}
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 30px;
+    vertical-align: middle; 
+}
+.grid-item:hover {
+    transform: scale(1.1);
+}
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 70px;
+    overflow: hidden;
+}
+footer {
+    text-align: center;
+    padding: 6px;
+    background: #333;
+    color: white;
+    width: 100%;
+}    
